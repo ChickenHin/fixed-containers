@@ -1,18 +1,12 @@
 name: Ubuntu (clang)
 
 on:
-  pull_request:
-  release:
-    types: [published]
-  push:
-    tags:
-    branches:
-      - main
+  workflow_dispatch: 
 
 
 env:
   CTEST_OUTPUT_ON_FAILURE: 1
-  CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+  # CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
   CPM_SOURCE_CACHE: ${{ github.workspace }}/cpm_modules
 
 jobs:
