@@ -12,13 +12,13 @@
 name: "CodeQL"
 
 on:
-  pull_request:
-  release:
-    types: [published]
-  push:
-    tags:
-    branches:
-      - main
+  # pull_request:
+  # release:
+  #   types: [published]
+  # push:
+  #   tags:
+  #   branches:
+  #     - main
 
 env:
   # Conan cache environment variables
